@@ -1,0 +1,162 @@
+#details-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    margin: 50px auto;
+    min-height: 400px;
+    max-width: 45%;
+    border: 2px ridge rgb(210, 208, 208);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.24);
+  }
+  
+  #img-wrapper {
+    max-width: 35%;
+  }
+  
+  #img-wrapper img {
+    width: 100%;
+    min-height: 300px;
+    display: block;
+  }
+  
+  #details-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 29px;
+    width: 100%;
+  }
+  
+  #info-wrapper {
+    display: block;
+    width: 65%;
+  }
+  
+  #info-wrapper > p {
+    width: 90%;
+    margin: 30px auto;
+    height: auto;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  #info-wrapper > p > span {
+    font-weight: lighter;
+  }
+  
+  h4 {
+    text-align: center;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 19px;
+  }
+  
+  span {
+    font-size: 17px;
+  }
+  
+  #action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  
+  #action-buttons a {
+    text-decoration: none;
+    margin: auto 50px;
+    font-size: 21px;
+    width: 130px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background: #818383;
+    border-radius: 10px;
+  }
+
+  .is-owner-deskr {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+    color: white;
+    background-color: rgba(255, 51, 129, 1);
+  }
+
+
+  .single-bar-name {
+    padding: 0 !important;
+    padding-left: 5px !important;
+    text-transform: capitalize;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+
+  }
+
+  .title,
+  .salary {
+    font-size: 21px;
+  } 
+  
+   .card {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 23%;
+    height: 600px;
+    margin: 25px auto;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px ridge rgb(210, 208, 208);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.24);
+  } 
+  
+   .details-btn {
+    text-decoration: none;
+    margin: auto 50px;
+    font-size: 21px;
+    width: 130px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background:rgba(255, 51, 129, 1);
+  } 
+  
+   .card p {
+    min-width: 90% !important;
+    margin: auto;
+    font-size: 21px;
+    max-height: 50px;
+    max-width: 30%;
+    text-align: center;
+  }
+  
+  .card span {
+    padding: 10px;
+    margin: auto;
+  } 
+  
+  .card img {
+    margin: auto;
+    height: 400px;
+    width: 95%;
+  }
+
+  
+  .custumerNameSpan{
+    padding: 0;
+    padding-left: 3px !important;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 55;
+
+  }
+
+  
+ 

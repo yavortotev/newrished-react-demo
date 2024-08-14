@@ -1,0 +1,49 @@
+.wrapper {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.wrapper li {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.products {
+    display: flex;
+    margin: 10px;
+}
+
+.logoimg{
+  height: 70px
+}
+
+a {
+    color:rgba(83, 116, 140, 1);
+    font-weight: bold;
+    
+  }
+
+  .spanintro {
+
+    display: flex;
+    align-items: center;
+    color: rgba(77, 112, 137, 1);;
+
+  }
+
+  .name {
+    
+    text-transform: capitalize;
+    color:rgba(255, 51, 129, 1) ;
+    font-weight: bold;
+    
+  }
+
+  .namespan {
+    padding-left: 5px;
+    text-transform: capitalize;
+    color:rgba(255, 51, 129, 1) ;
+    font-weight: bold;
+  }

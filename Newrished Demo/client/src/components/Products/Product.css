@@ -1,0 +1,22 @@
+#dashboard {
+    margin-top: 50px;
+    display: block;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+  
+ .card-wrapper {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    color: rgba(77, 112, 137, 1);
+  }
+  
+  .card-wrapper h2 {
+    margin: auto;
+  }
+  
+  

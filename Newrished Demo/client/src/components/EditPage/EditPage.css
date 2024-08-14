@@ -1,0 +1,17 @@
+.owner-background {
+    background-image: url('../../assets/cover565.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    min-height: 100vh
+  }
+
+  label {
+    color: rgba(255, 51, 129, 1);
+    padding-bottom: 10px;
+    font-weight: bold;
+    display: block;
+  }
+
+  input {
+    text-align: center;
+  }

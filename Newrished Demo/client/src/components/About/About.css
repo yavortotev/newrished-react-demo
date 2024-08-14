@@ -1,0 +1,54 @@
+
+  .text {
+    max-width: 900px; 
+    margin: 20px auto; 
+    padding: 30px; 
+    background: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+  }
+  
+  img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    margin-bottom: 30px; 
+  }
+  
+  h1 {
+    padding-bottom: 80px;
+    font-size: 2.5em; 
+    margin-bottom: 30px; 
+    color: rgba(255, 51, 129, 1);
+    text-align: center; 
+  }
+  
+  
+  
+  ul {
+    padding-left: 20px; 
+    margin-bottom: 25px; 
+    list-style-position: inside; 
+  }
+  
+  ul li {
+    margin-bottom: 15px; 
+    color: (77, 112, 137, 1);
+    text-align: center; 
+  }
+  
+  
+  ul li strong {
+    color: rgba(255, 51, 129, 1);
+    inline-size: 5px;
+  }
+
+  .text{
+    color: rgba(77, 112, 137, 1); ;;
+  }
+
+  .pink-text{
+    color: rgba(255, 51, 129, 1);;
+    font-weight: bold;
+  }

@@ -1,0 +1,129 @@
+#details{
+  color:rgba(77, 112, 137, 1) ;
+}
+#details-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    margin: 50px auto;
+    min-height: 400px;
+    max-width: 45%;
+    border: 2px ridge rgb(210, 208, 208);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.24);
+    position: relative;
+  
+  }
+  
+  #img-wrapper {
+    max-width: 35%;
+  }
+  
+  #img-wrapper img {
+    width: 100%;
+    min-height: 300px;
+    display: block;
+  }
+  
+  #details-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 29px;
+    width: 100%;
+    padding-top: 30px;
+    color: rgba(255, 51, 129, 1);
+  
+  }
+  
+  #info-wrapper {
+    display: block;
+    width: 65%;
+  }
+  
+  #info-wrapper > p {
+    width: 90%;
+    margin: 30px auto;
+    height: auto;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  #info-wrapper > p > span {
+    font-weight: lighter;
+  }
+  
+  
+  
+  p {
+    text-align: center;
+    font-size: 19px;
+  }
+  
+  span {
+    font-size: 17px;
+  }
+  
+  #action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    max-width: 600px;
+    
+  }
+  
+  #action-buttons a {
+    text-decoration: none;
+    margin: auto 50px;
+    font-size: 21px;
+    width: 130px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background: rgba(255, 51, 129, 1);
+    border-radius: 10px;
+    cursor: pointer;
+   
+  }
+  .owner-background {
+    background-image: url('../../assets/cover565.jpg'); /* Set your background image URL */
+    background-size: cover; /* Ensure the image covers the entire element */
+    background-position: center; /* Center the image within the element */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    min-height: 100vh
+  }
+
+  .pop-up-wrapper{
+    border: 1px solid rgba(255, 51, 129, 1);
+    padding: 1px 40px;
+    position: absolute;
+    bottom: 10px;
+    background-color:rgba(77, 112, 137, 1);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  .pop-up-btns{
+    display: flex;
+    justify-content: space-between;
+    
+    max-width: 250px;
+    margin: 0 auto;
+
+
+  }
+
+  .pop-up-btns button{
+    color: white;
+    background-color: rgba(255, 51, 129, 1); 
+    border:none;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+
+  }
+  
+
+  

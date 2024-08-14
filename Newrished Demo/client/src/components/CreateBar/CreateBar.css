@@ -1,0 +1,31 @@
+.single-bar-name {
+    padding: 0;
+    padding-left: 5px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+
+.design-name {
+    color: rgba(255, 51, 129, 1);
+    font-size: 30px;
+}
+
+.wrapper-big-create {
+    position: relative; 
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-image: url('../../assets/cover565.jpg'); 
+    background-size: contain; 
+    background-position: contain; 
+    background-repeat: no-repeat; 
+  }
+  
+ 
+
+  .form h2 {
+    color:rgba(77, 112, 137, 1); ;
+  }
