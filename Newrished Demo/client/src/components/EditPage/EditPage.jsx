@@ -110,7 +110,10 @@ const EditPage = () => {
               id="flavor"
               placeholder="Flavor"
             />
+            <div className="buttons">
             <button type="submit">Edit</button>
+            <button onClick={() => navigate('/products')} type="button">All Bars</button>
+            </div>
           </form>
         </div>
       </section>

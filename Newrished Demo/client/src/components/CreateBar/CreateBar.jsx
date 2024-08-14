@@ -119,7 +119,10 @@ const CreateBar = () => {
               </p>
 
             )}
+            <div className='buttons'>
             <button className='createButton' type="submit">Create</button>
+            <button  onClick={() => navigate('/products')} className='createButton' type="button">All Bars</button>
+            </div>
           </form>
         </div>
       </section>

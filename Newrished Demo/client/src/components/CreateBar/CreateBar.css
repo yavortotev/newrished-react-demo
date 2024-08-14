@@ -29,3 +29,9 @@
   .form h2 {
     color:rgba(77, 112, 137, 1); ;
   }
+
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }

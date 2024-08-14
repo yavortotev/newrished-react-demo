@@ -48,7 +48,7 @@ const Details = () => {
   }
 
   return (
-    <div className={isAuthenticated ? 'owner-background' : ''}>
+    <div className={'owner-background'}>
       <section id="details">
         <div id="details-wrapper">
           <p id="details-title">{bar.flavor}</p>
@@ -65,19 +65,24 @@ const Details = () => {
             <p>Weight: <span id="details-value">{bar.weight}</span></p>
           </div>
 
-
-          {isOwner && (
+         
+          
             <div id="action-buttons">
+            <a onClick={() => navigate('/products')}>All Bars</a>
+            {isOwner && (
+              <>
               <Link to={`/products/${id}/edit`} id="edit-btn">Edit</Link>
               <a href="" onClick={togglePopUP} id="delete-btn">Delete</a>
-              <a onClick={() => navigate('/products')}>Our Bars</a>
-              <a onClick={() => navigate('/createbar')}>Create More</a>
+              
+              <a onClick={() => navigate('/createbar')}>Create  Bar</a>
               <div className='is-owner-deskr'>
                 Custom-Made Just for You, <span className='single-bar-name'>{name}</span>!
               </div>
-
+              </>
+            )}
             </div>
-          )}
+
+         
 
           {openPopUp && (
             <div className="pop-up-wrapper">

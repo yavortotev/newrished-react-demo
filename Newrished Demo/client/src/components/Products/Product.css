@@ -20,3 +20,25 @@
   }
   
   
+  #dashboard {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto; 
+  }
+  
+  #dashboard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/cover565.jpg');
+    background-size: cover; 
+    background-position: contain; 
+    background-repeat: no-repeat;
+   
+  }

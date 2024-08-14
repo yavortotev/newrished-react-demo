@@ -17,6 +17,7 @@ import AuthGuard from "./components/Guards/AuthGuard";
 
 import './index.css'
 import LoginGuard from "./components/Guards/LoginGuard";
+import Footer from './components/Footer/Footer'
 
 
 
@@ -29,7 +30,7 @@ const App = () => {
 
   return (
 
-    
+    <div className="main-div">
      <AuthContextProvider>
      
       <NavBar />
@@ -51,10 +52,12 @@ const App = () => {
       </Route>
       
       </Routes>
+      <Footer />
       
       
   
      </AuthContextProvider>
+      </div>
      
     
   );
