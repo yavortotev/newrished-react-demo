@@ -1,0 +1,16 @@
+.not-found{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+   
+}
+.homeButton{
+    display: inline-block;
+    align-items: center;
+    padding: 40px;
+    background-color:rgba(255, 51, 129, 1);
+    color: white;
+    border-radius: 20px;
+    }

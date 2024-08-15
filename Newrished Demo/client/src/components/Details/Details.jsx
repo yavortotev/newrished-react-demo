@@ -74,7 +74,7 @@ const Details = () => {
               <Link to={`/products/${id}/edit`} id="edit-btn">Edit</Link>
               <a href="" onClick={togglePopUP} id="delete-btn">Delete</a>
               
-              <a onClick={() => navigate('/createbar')}>Create  Bar</a>
+              <a   onClick={() => navigate('/createbar')}>Create  Bar</a>
               <div className='is-owner-deskr'>
                 Custom-Made Just for You, <span className='single-bar-name'>{name}</span>!
               </div>

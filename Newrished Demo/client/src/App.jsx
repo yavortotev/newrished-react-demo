@@ -1,4 +1,3 @@
-//import AuthProvider from "./components/context/AuthContext";
 import { Routes,Route } from "react-router-dom";
 
 import NavBar from "./components/NavBar/NavBar";
@@ -18,7 +17,7 @@ import AuthGuard from "./components/Guards/AuthGuard";
 import './index.css'
 import LoginGuard from "./components/Guards/LoginGuard";
 import Footer from './components/Footer/Footer'
-
+import Page404 from './components/Page404/Page404'
 
 
 
@@ -51,6 +50,8 @@ const App = () => {
       <Route path={'register'} element={<Register />} />
       </Route>
       
+      <Route path="*" element={<Page404 />} />
+
       </Routes>
       <Footer />
       
