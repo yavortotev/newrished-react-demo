@@ -3,10 +3,11 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { useDeleteBar, useGetOneBarById } from "../../hooks/useBars.js"
 
 import { useAuthContext } from "../context/AuthContext.jsx";
-
+import { useEffect, useState } from "react";
+import comsntsApi from "../../api/comsnts-api.js";
 
 import "./Details.css"
-import { useState } from "react";
+
 
 
 
@@ -18,6 +19,22 @@ const Details = () => {
   const [openPopUp, setopenPopUp] = useState(false)
   const { userId, email, isAuthenticated } = useAuthContext()
   const isOwner = userId === bar._ownerId
+  const [allComments, setAllComment] = useState([])
+  const [comment, setNewComment] = useState()
+
+
+
+  useEffect(() => {
+    //TODO novo
+
+    const fetchComntsData = async () => {
+      const coments = await comsntsApi.getAllComents(id)
+      console.log(coments)
+      setAllComment(coments)
+    }
+    fetchComntsData()
+
+  }, [])
 
   const name = email?.split('@')[0]
 
@@ -47,8 +64,22 @@ const Details = () => {
     return
   }
 
+  const commentSubmitHandler = async (e) => {
+    e.preventDefault()
+
+    await comsntsApi.create(id, comment)
+
+
+    const coments = await comsntsApi.getAllComents(id)
+    console.log(coments)
+    setAllComment(coments)
+    setNewComment("")
+
+
+  }
+
   return (
-    <div className={'owner-background'}>
+    <>    <div className={'owner-background'}>
       <section id="details">
         <div id="details-wrapper">
           <p id="details-title">{bar.flavor}</p>
@@ -99,7 +130,60 @@ const Details = () => {
         </div>
 
       </section>
-    </div>
+
+      <article className="create-comment">
+
+          {isAuthenticated
+            ? <form className="form" onSubmit={commentSubmitHandler}>
+
+              <label>Add new comment:</label>
+
+              <input
+                type="text"
+                hidden
+                name="gameId"
+                onChange={(e) => setUsername(e.target.value)}
+                value={id}
+
+              />
+
+              <textarea
+                name="comment"
+                placeholder="Comment..."
+                onChange={(e) => setNewComment(e.target.value)}
+                value={comment}
+              />
+
+
+              <div>
+                <button className="btn submit buttonsss" type="submit"  >Add Comment </button>
+              </div>
+
+            </form>
+
+            : ""
+          }
+
+        </article>
+        
+        
+         </div>
+    <ul className="form comment" >
+    <h1 >Comments :</h1> 
+    
+    
+    {allComments.map(c => {
+      return (<li key={c._id}>
+        <div>{c.comment}</div>
+      </li>)
+    })}
+     {allComments.length ===0 
+  ? <h2>'No comments yet!'</h2>
+: ""
+}
+  </ul>
+  </>
+
 
   )
 };
