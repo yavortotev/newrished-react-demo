@@ -12,6 +12,7 @@
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    width: 1240px;
     color: rgba(77, 112, 137, 1);
   }
   

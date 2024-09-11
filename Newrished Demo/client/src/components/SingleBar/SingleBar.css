@@ -108,7 +108,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 23%;
+    max-width: 400px;
     height: 600px;
     margin: 25px auto;
     background-color: white;
